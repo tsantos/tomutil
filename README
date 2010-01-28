@@ -1,0 +1,7 @@
+This gem contains the TomUtil module:
+
+require 'tomutil/parallel' # gives you:
+
+parallel_each(list, &block): A function that runs the associated block each in its own thread for each item in the list.
+
+
