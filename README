@@ -1,7 +1,12 @@
 This gem contains the TomUtil module:
 
-require 'tomutil/parallel' # gives you:
+require 'tomutil/parallel'
+include TomUtil
 
 parallel_each(list, &block): A function that runs the associated block each in its own thread for each item in the list.
+prepend_exec(str, exec_str): a function that will execute the exec_str and will prepend it's stdout output with str.
 
+require 'tomutil/parallel'
+include TomUtil
 
+Padder: a class that I made for padding strings with spaces.  It takes a list of strings and will pad any string to the max of the lengths of the strings in the list.
