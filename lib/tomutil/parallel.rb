@@ -21,11 +21,15 @@ module TomUtil
     end
     
     def prepend_exec(str, cmd)
-        stdin, stdout, stderr = Open3.popen3(cmd)
-        while true
-            puts "#{str}#{stdout.readline}"
+        Open3.popen3(cmd) do |stdin, stdout, stderr|
+            while true
+                begin
+                    puts "#{str}#{stdout.readline}"
+                rescue
+                    break
+                end
+            end
         end
     end
-    
 end
 
