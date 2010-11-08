@@ -7,7 +7,7 @@ require 'lib/tomutil/parallel'
 require 'lib/tomutil/padder'
 include TomUtil
 
-hosts = %w[h01 h02 h03 h04 h05 h06 h07 h08 h09 h10]
+hosts = %w[hd01 hd02 hd03 hd04 hd05 hd06 hd07 hd08 hd09 hd10]
 
 parallel_each(hosts) do |host|
     #puts `ssh #{host} ls`
