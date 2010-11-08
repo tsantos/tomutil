@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+$:.unshift('..')
+
 require 'rubygems'
 require 'lib/tomutil/parallel'
 require 'lib/tomutil/padder'

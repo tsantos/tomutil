@@ -3,6 +3,7 @@ require 'thread'
 require 'open3'
 
 module TomUtil
+    # Runs the block for each item in list
     def parallel_each(list, &block)
         threads = []
 
@@ -19,7 +20,9 @@ module TomUtil
             end
         end
     end
-    
+   
+    # Lets you prepend a string to the output lines
+    # of the exec.
     def prepend_exec(str, cmd)
         Open3.popen3(cmd) do |stdin, stdout, stderr|
             while true
