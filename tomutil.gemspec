@@ -11,8 +11,9 @@ Gem::Specification.new do |s|
 	s.email = "santos.tom@gmail.com"
 	s.files = %w[
         README
-        lib/tomutil/parallel.rb
         lib/tomutil/padder.rb
+        lib/tomutil/parallel.rb
+        lib/tomutil/str_utils.rb
     ]
 	s.homepage = "http://github.com/tsantos/tomutil"
 	s.rubygems_version = "1.3.0"
