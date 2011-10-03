@@ -20,6 +20,17 @@ module TomUtil
          end
       end
    end
+   
+   # Returns an Array of threads
+   def launch_threads num_threads, &block
+     threads = []
+     num_threads.times do
+       threads << Thread.new(block) do |block|
+         block.call()
+       end
+     end
+     threads
+   end
   
    # Lets you prepend a string to the output lines
    # of the exec.
