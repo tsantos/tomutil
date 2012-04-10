@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |s|
 	s.name = "tomutil"
-	s.version = "1.2.1"
+	s.version = "1.3.0"
 
 	s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
 	s.authors = ["Tom Santos"]
@@ -15,6 +15,8 @@ Gem::Specification.new do |s|
         lib/tomutil/parallel.rb
         lib/tomutil/str_utils.rb
         lib/tomutil/file_utils.rb
+        lib/tomutil/str_utils.rb
+        lib/tomutil/hash.rb
     ]
 	s.homepage = "http://github.com/tsantos/tomutil"
 	s.rubygems_version = "1.3.0"

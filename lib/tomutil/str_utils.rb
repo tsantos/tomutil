@@ -1,5 +1,6 @@
 
 module TomUtil
+   # Wow. Ruby beginner time here.
    # Lets you pass in a string that has some numeric ranges specified.
    # It will create a list of strings with the ranges played out.
    # host-(9..11) will make ['host-09', 'host-10', 'host-11]
